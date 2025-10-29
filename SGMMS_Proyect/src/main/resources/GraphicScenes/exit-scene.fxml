@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" stylesheets="@../org/bunuelolovers/sgmms/sgmms_proyect/css/SceneStyles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.bunuelolovers.sgmms.sgmms_proyect.controller.fxmlControllers.ExitSceneController">
+    <children>
+             <Button fx:id="yesButton" layoutX="153.0" layoutY="501.0" onAction="#onYes" prefHeight="48.0" prefWidth="120.0" text="Si" />
+             <ImageView fitHeight="80.0" fitWidth="98.0" layoutX="197.0" layoutY="400.0">
+                 <image>
+                     <Image url="@../org/bunuelolovers/sgmms/sgmms_proyect/images/bien.png" />
+                 </image>
+             </ImageView>
+             <Button fx:id="noButton" layoutX="421.0" layoutY="501.0" onAction="#onNo" prefHeight="48.0" prefWidth="120.0" text="No" />
+             <ImageView fitHeight="93.0" fitWidth="116.0" layoutX="441.0" layoutY="386.0">
+                 <image>
+                     <Image url="@../org/bunuelolovers/sgmms/sgmms_proyect/images/no.png" />
+                         </image>
+             </ImageView>
+      <Label layoutX="206.0" layoutY="233.0" prefHeight="93.0" prefWidth="387.0" stylesheets="@../org/bunuelolovers/sgmms/sgmms_proyect/css/SceneStyles.css" text="Seguro que desea salir?" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

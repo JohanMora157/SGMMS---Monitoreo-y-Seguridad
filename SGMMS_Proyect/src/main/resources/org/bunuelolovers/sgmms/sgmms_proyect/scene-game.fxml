@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800" prefWidth="1400.0" stylesheets="@css/SceneStyles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.bunuelolovers.sgmms.sgmms_proyect.controller.fxmlControllers.MapController">
+    <children>
+        <Canvas fx:id="canvas" focusTraversable="true" height="800.0" layoutX="337.0" width="800.0" />
+      <Button fx:id="exitButton" layoutX="1173.0" layoutY="57.0" mnemonicParsing="false" onAction="#onClickButtonExit" text="Menu" />
+      <Button fx:id="resolveFire" layoutX="107.0" layoutY="44.0" mnemonicParsing="false" onAction="#onClickResolveFire" prefHeight="37.0" prefWidth="97.0" text="Resolve Fire" />
+      <Button fx:id="resolveHeist" layoutX="107.0" layoutY="172.0" mnemonicParsing="false" onAction="#onClickResolveHeist" prefHeight="44.0" prefWidth="98.0" text="Resolve Heist" />
+      <Button fx:id="resolveCrash" layoutX="111.0" layoutY="313.0" mnemonicParsing="false" onAction="#onClickResolveCrash" prefHeight="38.0" prefWidth="98.0" text="Resolve Crash" />
+      <Label layoutX="14.0" layoutY="426.0" prefHeight="30.0" prefWidth="268.0" text="Numero de carros Automatas :" textFill="WHITE">
+         <font>
+            <Font name="Wingdings" size="19.0" />
+         </font></Label>
+      <Label fx:id="numAutomatas" layoutX="287.0" layoutY="430.0" prefHeight="23.0" prefWidth="29.0" stylesheets="@css/playerForm_style.css" text="." textFill="#fafafa">
+         <font>
+            <Font name="Wingdings" size="18.0" />
+         </font></Label>
+    </children>
+
+</AnchorPane>

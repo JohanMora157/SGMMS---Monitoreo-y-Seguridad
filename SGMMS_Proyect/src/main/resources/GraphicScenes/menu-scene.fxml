@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.bunuelolovers.sgmms.sgmms_proyect.controller.fxmlControllers.MenuController">
+    <children>
+        <Button fx:id="toggleMusicButton" layoutX="106.0" layoutY="648.0" onAction="#onToggleMusic" prefHeight="0.0" prefWidth="200.0" text="🔇" />
+          <Label alignment="CENTER" layoutX="206.0" layoutY="84.0" prefHeight="60.0" prefWidth="400.0" styleClass="header" text="Seleccione una opción" textAlignment="CENTER" textFill="WHITE">
+              <font>
+                  <Font size="32.0" />
+              </font>
+          </Label>
+             <ImageView fitHeight="75.0" fitWidth="106.0" layoutX="147.0" layoutY="220.0">
+                 <image>
+                     <Image url="@../org/bunuelolovers/sgmms/sgmms_proyect/images/centromonitoreo.png" />
+                 </image>
+             </ImageView>
+             <Button fx:id="mCButton" alignment="TOP_CENTER" layoutX="100.0" layoutY="314.0" maxWidth="300.0" prefHeight="36.0" prefWidth="200.0" styleClass="button central-button" text="Centro de monitoreo" wrapText="true" />
+             <ImageView fitHeight="75.0" fitWidth="106.0" layoutX="365.0" layoutY="220.0">
+                 <image>
+                     <Image url="@../org/bunuelolovers/sgmms/sgmms_proyect/images/mapa.png" />
+                 </image>
+             </ImageView>
+             <Button fx:id="mapButton" layoutX="318.0" layoutY="314.0" onAction="#onClickActionMap" prefHeight="36.0" prefWidth="200.0" text="Mapa" />
+      <ImageView fitHeight="69.0" fitWidth="88.0" layoutX="724.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fitHeight="69.0" fitWidth="88.0" layoutX="594.0" layoutY="223.0">
+            <image>
+                <Image url="@../org/bunuelolovers/sgmms/sgmms_proyect/images/Routes.png" />
+            </image>
+        </ImageView>
+      <Button fx:id="goToRoutes" layoutX="538.0" layoutY="314.0" mnemonicParsing="false" onAction="#onClickExitToRoutes" prefHeight="36.0" prefWidth="200.0" text="Rutas" />
+             <ImageView fitHeight="52.0" fitWidth="96.0" layoutX="570.0" layoutY="573.0">
+                 <image>
+                     <Image url="@../org/bunuelolovers/sgmms/sgmms_proyect/images/salida.png" />
+                 </image>
+             </ImageView>
+             <Button fx:id="exitButton" layoutX="518.0" layoutY="643.0" onAction="#onClickExit" prefHeight="36.0" prefWidth="200.0" text="Salir" />
+    </children>
+
+</AnchorPane>

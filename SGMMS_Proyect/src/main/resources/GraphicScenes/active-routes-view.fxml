@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" stylesheets="@../org/bunuelolovers/sgmms/sgmms_proyect/css/SceneStyles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.bunuelolovers.sgmms.sgmms_proyect.controller.fxmlControllers.ActiveRoutesViewController">
+    <children>
+        <TableView fx:id="table" layoutX="45.0" layoutY="199.0" prefHeight="550.0" prefWidth="720.0" stylesheets="@../org/bunuelolovers/sgmms/sgmms_proyect/css/tablesCss.css">
+            <columns>
+                <TableColumn fx:id="name" prefWidth="136.99999237060547" text="NOMBRE" />
+                <TableColumn fx:id="type" prefWidth="147.0" text="TIPO" />
+                <TableColumn fx:id="time" prefWidth="145.0" text="TIEMPO" />
+                <TableColumn fx:id="start" prefWidth="144.60006713867188" text="START" />
+                <TableColumn fx:id="end" prefWidth="132.4000244140625" text="END" />
+            </columns>
+        </TableView>
+        <Button fx:id="exit" layoutX="59.0" layoutY="46.0" mnemonicParsing="false" onAction="#onClickExit" prefHeight="41.0" prefWidth="78.0" text="MENU" />
+    </children>
+</AnchorPane>

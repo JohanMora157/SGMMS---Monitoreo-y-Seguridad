@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.bunuelolovers.sgmms.sgmms_proyect.controller.fxmlControllers.IncidentHistoryController">
+    <children>
+        <Button fx:id="exit" layoutX="50.0" layoutY="30.0" mnemonicParsing="false" onAction="#onClickExit" prefHeight="40.0" prefWidth="120.0" text="MENÚ" />
+
+        <HBox alignment="CENTER" layoutX="120.0" layoutY="75.0" spacing="60">
+            <Label prefWidth="130.0" styleClass="hud-label" text="HISTÓRICO DE:" textFill="WHITE" />
+
+            <HBox alignment="CENTER" spacing="5">
+                <ImageView fitHeight="24.0" fitWidth="24.0">
+                    <image>
+                        <Image url="@../org/bunuelolovers/sgmms/sgmms_proyect/images/crash.png" />
+                    </image>
+                </ImageView>
+                <Label prefWidth="80.0" styleClass="hud-label" text="Crashes" textFill="WHITE" />
+            </HBox>
+
+            <HBox alignment="CENTER" spacing="5">
+                <ImageView fitHeight="24.0" fitWidth="24.0">
+                    <image>
+                        <Image url="@../org/bunuelolovers/sgmms/sgmms_proyect/images/incendiardo.png" />
+                    </image>
+                </ImageView>
+                <Label prefWidth="80.0" styleClass="hud-label" text="Fires" textFill="WHITE" />
+            </HBox>
+
+            <HBox alignment="CENTER" spacing="5">
+                <ImageView fitHeight="24.0" fitWidth="24.0">
+                    <image>
+                        <Image url="@../org/bunuelolovers/sgmms/sgmms_proyect/images/robo6.png" />
+                    </image>
+                </ImageView>
+                <Label prefWidth="80.0" styleClass="hud-label" text="Heist" textFill="WHITE" />
+            </HBox>
+        </HBox>
+
+        <HBox alignment="CENTER" layoutX="180.0" layoutY="120.0" spacing="60">
+            <Label prefWidth="130.0" text="" />
+            <Label fx:id="historyCrashes" prefWidth="80.0" styleClass="hud-label" text="." textFill="WHITE" />
+            <Label fx:id="historyFires" prefWidth="80.0" styleClass="hud-label" text="." textFill="WHITE" />
+            <Label fx:id="historyHeist" prefWidth="80.0" styleClass="hud-label" text="." textFill="WHITE" />
+        </HBox>
+
+        <TableView fx:id="table" layoutX="40.0" layoutY="200.0" prefHeight="550.0" prefWidth="720.0" stylesheets="@../org/bunuelolovers/sgmms/sgmms_proyect/css/tablesCss.css">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="197.79998016357422" text="ID" />
+                <TableColumn fx:id="gravity" prefWidth="88.80001831054688" text="GRAVEDAD" />
+                <TableColumn fx:id="state" prefWidth="101.5999755859375" text="ESTADO" />
+                <TableColumn fx:id="ubi" prefWidth="127.2" text="UBICACIÓN" />
+                <TableColumn fx:id="type" prefWidth="85.6" text="TIPO" />
+                <TableColumn fx:id="vertex" prefWidth="128.0" text="VÉRTICE" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
